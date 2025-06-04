@@ -17,26 +17,25 @@ We introduce the Open Data Contract Standard and the popular open source tool Da
 - [ODCS Source (GitHub)](https://github.com/bitol-io/open-data-contract-standard)
 - [Data Contract CLI (GitHub)](https://github.com/datacontract/datacontract-cli)
 
-## Case Study and Method (10 mins)
-
-Next, we introduce our case study that is used for the hands-on part.
-
-### Content
-- The case study 
-
-## Task 1: Put Your Data Under Contract (30 mins)
+## Task 1: Put Your Data Under Contract (40 mins)
 
 Using our case study, participants take data under contract. They create a data contract for existing data, starting with an imported draft (datacontract import) and then add more and more iteratively, including quality checks. They will validate the data against their contract (datacontract test), create HTML documentation and visualizations (datacontract export), and even a data contract catalog (datacontract catalog). We have a short retro after this exercise.
 
 ### Steps
 1. Install Data Contract CLI (workshop facilitators will help)
-2. Set up environment variables for a connection to Databricks
+   - Easiest with uv: `uv tool install "datacontract-cli[all]"`
+   - Check if it works with `datacontract --version`
+2. Set up environment variables for a connection to Databricks using the environment variables provided in the `env` file:
+   
 3. Use the **import** command to put the data available on Databricks under contract.
+   - Tables in the format catalog.schema.table: 
+       - datameshlive.orders.orders
+       - datameshlive.orders.line_items
 4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
 5. Add SQL-based quality checks on the data and re-run the tests with the **test** command.
 6. Use the **export** command to create an HTML documentation of the data contract. 
 7. Use the **catalog** command to create a data contract catalog.
-8. OPTIONAL Use the integration with Data Mesh Manager
+8. BONUS Use the integration with Data Mesh Manager
     1. Create an account and add an organization in Data Mesh Manager (www.datamesh-manager.com)
     2. Use the **publish** command to publish the data contract to the Data Mesh Manager. You need to add a custom property
     3. Use the **test --publish** command with the publish option to publish the test results to the Data Mesh Manager
@@ -52,7 +51,7 @@ Using our case study, participants take data under contract. They create a data 
 2. Grab a coffee
 3. Talk to others
 
-## Task 2: Simulate a Data Contract Workshop (30 mins)
+## Task 2: Simulate a Data Contract Workshop (40 mins)
 
 After a break, we switch to contract-first. A data contract is created based on requirements in a group exercise with a facilitator, a data consumer, and a data producer. The facilitator elicit the requirements from the data consumer and writes the YAML files, while making sure that the data producer is fine with it as they have to own the contract afterwards. We have a short retro after this exercise.
 
@@ -61,7 +60,7 @@ After a break, we switch to contract-first. A data contract is created based on 
 2. Open the Excel template `task2.datacontract.odcs.xlsx` (recommended)
 3. Follow the [guidelines for ODCS](http://datacontract.com/workshop#guidelines-for-odcs). Ignore data quality checks for this exercise.
 4. Start the workshop and play your roles. :-)
-5. At the end, convert excel to yaml with the Data Contract CLI via the import command
+5. BONUS Convert excel to yaml with the Data Contract CLI via the **import --format excel** command
 6. Share your experience in a short retrospective.
 
 ### Resources
@@ -70,13 +69,14 @@ After a break, we switch to contract-first. A data contract is created based on 
 - [Instructions for Data Provider](task2-dataprovider.md)
 - [Instructions for Data Consumer](task2-dataconsumer.md)
 
-## Conclusion (20 mins)
+## Conclusion (10 mins)
 
 We finish the session by talking about automation potentials after having introduced data contracts.
 
 ### Steps
 - Add your idea on what can be automated on the flip chart.
 - Open Discussion until the end.
+- Do not forget to give ODCS and the Data Contract CLI a star on GitHub! :-)
 
 ## Authors
 
