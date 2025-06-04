@@ -1,0 +1,6 @@
+- you are the product owner of the team shipment (SHIP)
+- you owns the shipments bounded context
+- your internal operational database structure: add it here as a table.
+- your team a slack channel #SHIP for contact in their example.slack.com slack
+- your team has an email address where they can be reached: team.ship@example.com
+- you provide support for your services only during business hours (9to5) in CEST
