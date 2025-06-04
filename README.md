@@ -25,13 +25,14 @@ Using our case study, participants take data under contract. They create a data 
 1. Install Data Contract CLI (workshop facilitators will help)
    - Easiest with uv: `uv tool install "datacontract-cli[all]"`
    - Check if it works with `datacontract --version`
-2. Set up environment variables for a connection to Databricks using the environment variables provided in the `env` file:
-   
+2. Set up environment variables for a connection to Databricks using the environment variables provided in the `env` file given by the trainers.
 3. Use the **import** command to put the data available on Databricks under contract.
    - Tables in the format catalog.schema.table: 
        - datameshlive.orders.orders
        - datameshlive.orders.line_items
+   - Command: `datacontract import --format unity --unity-table-full-name datameshlive.orders.orders --unity-table-full-name datameshlive.orders.line_items --datacontract-format open_data_contract_standard`
 4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
+   - Command: `datacontract test your.datacontract.odcs.yaml`
 5. Add SQL-based quality checks on the data and re-run the tests with the **test** command.
 6. Use the **export** command to create an HTML documentation of the data contract. 
 7. Use the **catalog** command to create a data contract catalog.
