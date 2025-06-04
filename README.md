@@ -17,7 +17,7 @@ We introduce the Open Data Contract Standard and the popular open source tool Da
 - [ODCS Source (GitHub)](https://github.com/bitol-io/open-data-contract-standard)
 - [Data Contract CLI (GitHub)](https://github.com/datacontract/datacontract-cli)
 
-## Task 1: Put Your Data Under Contract (40 mins)
+## Task 1: Data-First, or Put Your Data Under Contract (40 mins)
 
 Using our case study, participants take data under contract. They create a data contract for existing data, starting with an imported draft (datacontract import) and then add more and more iteratively, including quality checks. They will validate the data against their contract (datacontract test), create HTML documentation and visualizations (datacontract export), and even a data contract catalog (datacontract catalog). We have a short retro after this exercise.
 
@@ -51,7 +51,7 @@ Using our case study, participants take data under contract. They create a data 
 2. Grab a coffee
 3. Talk to others
 
-## Task 2: Simulate a Data Contract Workshop (40 mins)
+## Task 2: Contract-First, or Specify a Data Contract in a Workshop (40 mins)
 
 After a break, we switch to contract-first. A data contract is created based on requirements in a group exercise with a facilitator, a data consumer, and a data producer. The facilitator elicit the requirements from the data consumer and writes the YAML files, while making sure that the data producer is fine with it as they have to own the contract afterwards. We have a short retro after this exercise.
 
