@@ -1,8 +1,10 @@
 # Hands-on Workshop on Data Contracts using the Data Contract CLI
 
+The workshop has been given at the [Data Mesh Live 2025 conference](https://2025.datameshlive.com/program/data-contract-workshop-using-open-source-tooling/).
+
 ## Introduction (20 mins)
 
-We introduce the Open Data Contract Standard and the popular open source tool Data Contract CLI to lay a foundation of the YAML format and the tool we will use throught the session.
+We introduce the Open Data Contract Standard and the popular open source tool Data Contract CLI to lay a foundation of the YAML format and the tool we will use throughout the session.
 
 ### Steps
 1. Intro (Show Project Structure)
@@ -29,15 +31,16 @@ Using our case study, participants take data under contract. They create a data 
 ### Steps
 1. Install Data Contract CLI (workshop facilitators will help)
 2. Set up environment variables for a connection to Databricks
-3. Use the import command to put the data available on Databricks under contract.
-4. Use the test command to check whether the data on Databricks confirm to the Data Contract
-5. Add SQL-based quality checks on the data and re-run the tests.
-6. Use the catalog command to create a data contract catalog.
-7. Use the export command to create a 
+3. Use the **import** command to put the data available on Databricks under contract.
+4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
+5. Add SQL-based quality checks on the data and re-run the tests with the **test** command.
+6. Use the **export** command to create an HTML documentation of the data contract. 
+7. Use the **catalog** command to create a data contract catalog.
 8. OPTIONAL Use the integration with Data Mesh Manager
     1. Create an account and add an organization in Data Mesh Manager (www.datamesh-manager.com)
-    2. Use the publish command to publish the data contract to the Data Mesh Manager. You need to add a custom property
-    3. Use the --publish option of the test command to publish the test results to the Data Mesh Manager
+    2. Use the **publish** command to publish the data contract to the Data Mesh Manager. You need to add a custom property
+    3. Use the **test --publish** command with the publish option to publish the test results to the Data Mesh Manager
+9. Share your experience in a short retrospective.
 
 ### Resources
 - [Data Contract CLI (GitHub)](https://github.com/datacontract/datacontract-cli)
@@ -56,9 +59,10 @@ After a break, we switch to contract-first. A data contract is created based on 
 ### Steps
 1. Form groups of three, and assign the different roles (facilitator, data provider, data consumer)
 2. Open the Excel template `task2.datacontract.odcs.xlsx` (recommended)
-3. Follow the [guidelines for ODCS](http://datacontract.com/workshop#guidelines-for-odcs)
+3. Follow the [guidelines for ODCS](http://datacontract.com/workshop#guidelines-for-odcs). Ignore data quality checks for this exercise.
 4. Start the workshop and play your roles. :-)
 5. At the end, convert excel to yaml with the Data Contract CLI via the import command
+6. Share your experience in a short retrospective.
 
 ### Resources
 - [Excel template](https://github.com/datacontract/open-data-contract-standard-excel-template)
@@ -78,4 +82,4 @@ We finish the session by talking about automation potentials after having introd
 
 **Dr. Simon Harrer** is a Senior Consultant at INNOQ in Germany. He is software developer at heart who has now turned to the dark side, namely the world of data. He co-authored datamesh-architecture.com and translated the Data Mesh book by Zhamak Dehghani into German. Next to his data mesh consulting projects, he is currently developing the [Data Mesh Manager](https://www.datamesh-manager.com), a SaaS product to fast-track any data mesh initiative.
 
-**Jochen Christ** is a Senior Consultant at INNOQ in Germany. He is a specialist for self-contained systems and data mesh. As a technical lead, he helps teams with complex transformations to innovative IT solutions. Jochen is maintainer of http-feeds.org and co-author of remotemobprogramming.org and datamesh-architecture.com.
+**Jochen Christ** is a Senior Consultant at INNOQ in Germany. He is a specialist for self-contained systems and data mesh. As a technical lead, he helps teams with complex transformations to innovative IT solutions. Jochen is maintainer of http-feeds.org and co-author of remotemobprogramming.org and datamesh-architecture.com. Together with Simon, he is developing the [Data Mesh Manager](https://www.datamesh-manager.com), a SaaS product to fast-track any data mesh initiative.
