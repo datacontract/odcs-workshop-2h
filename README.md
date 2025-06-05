@@ -48,10 +48,11 @@ Using our case study, participants take data under contract. They create a data 
    - Command: `datacontract catalog`
 8. BONUS Use the integration with Data Mesh Manager
     1. Create an account and add an organization in Data Mesh Manager (www.datamesh-manager.com)
-    2. Use the **publish** command to publish the data contract to the Data Mesh Manager. You need to add a custom property
+    2. Create an API key and set the environment variable `export DATAMESH_MANAGER_API_KEY=dmm_live_...` 
+    3. Use the **publish** command to publish the data contract to the Data Mesh Manager. You need to add a custom property
        - Command: `datacontract publish your.datacontract.odcs.yaml`
        - Note: you need to set a customProperty `owner` to the ID of the owning team in Data Mesh Manager.
-    3. Use the **test --publish** command with the publish option to publish the test results to the Data Mesh Manager
+    4. Use the **test --publish** command with the publish option to publish the test results to the Data Mesh Manager
        - Command: `datacontract test --publish-test-results your.datacontract.odcs.yaml`
 9. Share your experience in a short retrospective.
 
