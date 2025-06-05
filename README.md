@@ -35,6 +35,8 @@ Using our case study, participants take data under contract. They create a data 
 4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
    - Command: `datacontract test your.datacontract.odcs.yaml`
 5. Add SQL-based quality checks on the data and re-run the tests with the **test** command.
+    - [Add SQL-based quality check](https://bitol-io.github.io/open-data-contract-standard/latest/#sql) at the property or schema level.
+    - Command: `datacontract test your.datacontract.odcs.yaml`
 6. Use the **export** command to create an HTML documentation of the data contract. 
    - Command: `datacontract export --format html your.datacontract.odcs.yaml`
 7. Use the **catalog** command to create a data contract catalog.
@@ -50,6 +52,7 @@ Using our case study, participants take data under contract. They create a data 
 
 ### Resources
 - [Data Contract CLI (GitHub)](https://github.com/datacontract/datacontract-cli)
+- If you discover a bug during this workshop, please report it on the [GitHub Issues page](https://github.com/datacontract/datacontract-cli/issues)! :-)
 
 ## BREAK (10 mins)
 
