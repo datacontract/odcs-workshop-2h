@@ -76,6 +76,7 @@ Using our case study, participants take data under contract. They create a data 
 After a break, we switch to contract-first. A data contract is created based on requirements in a group exercise with a facilitator, a data consumer, and a data producer. The facilitator elicit the requirements from the data consumer and writes the YAML files, while making sure that the data producer is fine with it as they have to own the contract afterwards. We have a short retro after this exercise.
 
 ### Steps
+0. Trainers show the Excel template
 1. Form groups of three, and assign the different roles (facilitator, data provider, data consumer)
 2. Open the Excel template `task2.datacontract.odcs.xlsx` (recommended)
 3. Follow the [guidelines for ODCS](http://datacontract.com/workshop#guidelines-for-odcs). Ignore data quality checks for this exercise.
