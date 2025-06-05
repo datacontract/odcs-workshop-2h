@@ -36,11 +36,16 @@ Using our case study, participants take data under contract. They create a data 
    - Command: `datacontract test your.datacontract.odcs.yaml`
 5. Add SQL-based quality checks on the data and re-run the tests with the **test** command.
 6. Use the **export** command to create an HTML documentation of the data contract. 
+   - Command: `datacontract export --format html your.datacontract.odcs.yaml`
 7. Use the **catalog** command to create a data contract catalog.
+   - Command: `datacontract catalog`
 8. BONUS Use the integration with Data Mesh Manager
     1. Create an account and add an organization in Data Mesh Manager (www.datamesh-manager.com)
     2. Use the **publish** command to publish the data contract to the Data Mesh Manager. You need to add a custom property
+       - Command: `datacontract publish your.datacontract.odcs.yaml`
+       - Note: you need to set a customProperty `owner` to the ID of the owning team in Data Mesh Manager.
     3. Use the **test --publish** command with the publish option to publish the test results to the Data Mesh Manager
+       - Command: `datacontract test --publish-test-results your.datacontract.odcs.yaml`
 9. Share your experience in a short retrospective.
 
 ### Resources
