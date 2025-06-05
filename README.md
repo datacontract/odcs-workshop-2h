@@ -23,7 +23,8 @@ Using our case study, participants take data under contract. They create a data 
 
 ### Steps
 1. Install Data Contract CLI (workshop facilitators will help)
-   - Easiest with uv: `uv tool install 'datacontract-cli[all]'`
+   - Easiest with [uv](https://docs.astral.sh/uv/): `uv tool install 'datacontract-cli[all]'`
+   - Alternative Docker: `docker run --rm -v ${PWD}:/home/datacontract datacontract/cli --version`
    - Check if it works with `datacontract --version`
 2. Set up environment variables for a connection to Databricks using the environment variables provided in the `env` file given by the trainers.
 3. Use the **import** command to put the data available on Databricks under contract.
