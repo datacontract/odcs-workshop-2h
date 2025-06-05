@@ -31,7 +31,7 @@ Using our case study, participants take data under contract. They create a data 
    - Tables in the format catalog.schema.table: 
        - datameshlive.orders.orders
        - datameshlive.orders.line_items
-   - Command: `datacontract import --format unity --unity-table-full-name datameshlive.orders.orders --unity-table-full-name datameshlive.orders.line_items --datacontract-format open_data_contract_standard`
+   - Command: `datacontract import --format unity --unity-table-full-name datameshlive.orders.orders --unity-table-full-name datameshlive.orders.line_items --spec odcs`
 4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
    - Command: `datacontract test your.datacontract.odcs.yaml`
 5. Add SQL-based quality checks on the data and re-run the tests with the **test** command.
