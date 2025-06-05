@@ -49,12 +49,13 @@ Using our case study, participants take data under contract. They create a data 
    - Command: `datacontract export --format html your.datacontract.odcs.yaml`
 7. Use the **catalog** command to create a data contract catalog.
    - Command: `datacontract catalog`
-8. BONUS Use the integration with Data Mesh Manager
+8. **BONUS** Use the integration with Data Mesh Manager
     1. Create an account and add an organization in Data Mesh Manager (www.datamesh-manager.com)
     2. Create an API key and set the environment variable `export DATAMESH_MANAGER_API_KEY=dmm_live_...` 
     3. Use the **publish** command to publish the data contract to the Data Mesh Manager. You need to add a custom property
        - Command: `datacontract publish your.datacontract.odcs.yaml`
        - Note: you need to set a customProperty `owner` to the ID of the owning team in Data Mesh Manager.
+       - Export to excel using the Web UI of Data Mesh Manager
     4. Use the **test --publish** command with the publish option to publish the test results to the Data Mesh Manager
        - Command: `datacontract test --publish-test-results your.datacontract.odcs.yaml`
 9. Share your experience in a short retrospective.
@@ -79,7 +80,7 @@ After a break, we switch to contract-first. A data contract is created based on 
 2. Open the Excel template `task2.datacontract.odcs.xlsx` (recommended)
 3. Follow the [guidelines for ODCS](http://datacontract.com/workshop#guidelines-for-odcs). Ignore data quality checks for this exercise.
 4. Start the workshop and play your roles. :-)
-5. BONUS Convert excel to yaml with the Data Contract CLI via the **import --format excel** command
+5. **BONUS** Convert excel to yaml with the Data Contract CLI via the **import --format excel** command
 6. Share your experience in a short retrospective.
 
 ### Resources
