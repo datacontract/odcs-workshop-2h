@@ -27,7 +27,8 @@ We introduce the Open Data Contract Standard and the popular open source tool Da
 Using our case study, participants take data under contract. They create a data contract for existing data, starting with an imported draft (datacontract import) and then add more and more iteratively, including quality checks. They will validate the data against their contract (datacontract test), create HTML documentation and visualizations (datacontract export), and even a data contract catalog (datacontract catalog). We have a short retro after this exercise.
 
 ### Steps
-1. Install Data Contract CLI (workshop facilitators will help)
+0. Trainers show data in databricks as starting point
+1. Install Data Contract CLI (trainers will help)
    - Easiest with [uv](https://docs.astral.sh/uv/): `uv tool install 'datacontract-cli[all]'`
    - Check if it works with `datacontract --version`
    - Alternative Docker: `docker run --rm -v ${PWD}:/home/datacontract datacontract/cli --version`
