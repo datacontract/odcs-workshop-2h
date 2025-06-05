@@ -37,9 +37,11 @@ Using our case study, participants take data under contract. They create a data 
        - datameshlive.orders.orders
        - datameshlive.orders.line_items
    - Command: `datacontract import --format unity --unity-table-full-name datameshlive.orders.orders --unity-table-full-name datameshlive.orders.line_items --spec odcs`
+   - Add descriptions and semantics describing the data (guessing is fine here :-) )
 4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
    - Command: `datacontract test your.datacontract.odcs.yaml`
-5. Add SQL-based quality checks on the data and re-run the tests with the **test** command.
+5. Add constraints and SQL-based quality checks on the data and re-run the tests with the **test** command.
+    - Add constraints like `required: true`, ...
     - [Add SQL-based quality check](https://bitol-io.github.io/open-data-contract-standard/latest/#sql) at the property or schema level.
     - Command: `datacontract test your.datacontract.odcs.yaml`
 6. Use the **export** command to create an HTML documentation of the data contract. 
