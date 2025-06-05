@@ -7,10 +7,15 @@ The workshop has been given at the [Data Mesh Live 2025 conference](https://2025
 We introduce the Open Data Contract Standard and the popular open source tool Data Contract CLI to lay a foundation of the YAML format and the tool we will use throughout the session.
 
 ### Steps
-1. Intro (Show Project Structure)
-2. Intro ODCS (Show in Browser)
-3. Intro Data Contract CLI (Show in Browser)
+
+1. Intro:
+   - Who are the trainers?
+   - Have you used data contracts before?
+   - Why data contracts?
+2. Intro [ODCS](https://bitol-io.github.io/open-data-contract-standard/)
+3. Intro [Data Contract CLI](https://github.com/datacontract/datacontract-cli)
 4. Demo Data Contract CLI (In Terminal)
+   - `datacontract --help`
 
 ### Resources
 - [ODCS Docs](https://bitol-io.github.io/open-data-contract-standard/)
