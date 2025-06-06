@@ -141,6 +141,9 @@ We finish the session by talking about automation potentials after having introd
 - Add your idea on what can be automated on the flip chart.
 - Open Discussion until the end.
 - Do not forget to give ODCS and the Data Contract CLI a star on GitHub! :-)
+   - https://github.com/datacontract/datacontract-cli
+   - https://github.com/bitol-io/open-data-contract-standard
+- Rate the workshop on the conference platform!
 
 ## Authors
 
