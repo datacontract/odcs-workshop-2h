@@ -58,6 +58,20 @@ datacontract import \
 5. Add constraints and SQL-based quality checks on the data and re-run the tests with the **test** command.
     - Add constraints like `required: true`, ...
     - [Add SQL-based quality check](https://bitol-io.github.io/open-data-contract-standard/latest/#sql) at the property or schema level.
+
+```
+  properties:
+  - name: customer_email_address
+    physicalType: string
+    logicalType: string
+    required: true
+    quality:
+      - type: sql
+        description: Ensure that the email address is valid
+        query: SELECT COUNT(*) FROM {schema} WHERE {property} NOT LIKE '%@%'; 
+        mustBe: 0
+```
+     
     - Command: `datacontract test your.datacontract.odcs.yaml`
 6. Use the **export** command to create an HTML documentation of the data contract. 
    - Command: `datacontract export --format html your.datacontract.odcs.yaml`
