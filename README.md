@@ -143,6 +143,9 @@ We finish the session by talking about automation potentials after having introd
 - Do not forget to give ODCS and the Data Contract CLI a star on GitHub! :-)
    - https://github.com/datacontract/datacontract-cli
    - https://github.com/bitol-io/open-data-contract-standard
+- Connect on LinkedIn:
+   - [Dr. Simon Harrer](https://www.linkedin.com/in/simonharrer/)
+   - [Jochen Christ](https://www.linkedin.com/in/jochenchrist/)
 - Rate the workshop on the conference platform!
 
 ## Authors
