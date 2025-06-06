@@ -46,7 +46,7 @@ datacontract import \
   --spec odcs \
   --output orders.odcs.yaml
 ```
-   - Add descriptions and semantics describing the data (guessing is fine here :-) )
+   - Add descriptions and semantics describing the data (It’s OK to make some business assumptions. :-) )
 4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
    - Command: `datacontract test your.datacontract.odcs.yaml`
 5. Add constraints and SQL-based quality checks on the data and re-run the tests with the **test** command.
