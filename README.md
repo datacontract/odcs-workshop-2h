@@ -54,7 +54,7 @@ datacontract import \
 ```
    - Add descriptions and semantics describing the data (It’s OK to make some business assumptions. :-) )
 4. Use the **test** command to check whether the data on Databricks confirm to the Data Contract
-   - Command: `datacontract test your.datacontract.odcs.yaml`
+   - Command: `datacontract test orders.odcs.yaml`
 5. Add constraints and SQL-based quality checks on the data and re-run the tests with the **test** command.
     - Add constraints like `required: true`, ...
     - [Add SQL-based quality check](https://bitol-io.github.io/open-data-contract-standard/latest/#sql) at the property or schema level.
