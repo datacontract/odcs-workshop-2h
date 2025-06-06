@@ -32,7 +32,13 @@ Using our case study, participants take data under contract. They create a data 
    - Easiest with [uv](https://docs.astral.sh/uv/): `uv tool install 'datacontract-cli[all]'`
    - Check if it works with `datacontract --version`
    - Alternative Docker: `docker run --rm -v ${PWD}:/home/datacontract datacontract/cli --version`
-2. Set up environment variables for a connection to Databricks using the environment variables provided in the `.env` file given by the trainers.
+2. Set up environment variables for a connection to Databricks using the environment variables provided by the trainers.
+```
+export DATACONTRACT_DATABRICKS_TOKEN=dapi...
+export DATACONTRACT_DATABRICKS_SERVER_HOSTNAME=adb-...x.azuredatabricks.net
+export DATACONTRACT_DATABRICKS_HTTP_PATH=/sql/1.0/warehouses/xxx
+```
+
 3. Use the **import** command to put the data available on Databricks under contract.
    - Tables in the format catalog.schema.table: 
        - datameshlive.orders.orders
